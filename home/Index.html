@@ -2,141 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Personal Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Profile</title>
 
-  <!-- Bootstrap 5 (Bare Template) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">MyProfile</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<aside class="side-nav">
+  <h3 class="logo">ME</h3>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Work</a>
+  <a href="#contact">Contact</a>
+  <a href="resources.html">Resources</a>
+</aside>
 
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-      </ul>
+<main class="content">
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Your Name</h1>
+      <p class="tagline">Creative Student & Web Explorer</p>
+      <button onclick="scrollToSection('projects')">View My Work</button>
     </div>
-  </div>
-</nav>
+    <div class="hero-visual">
+      <div class="shape"></div>
+    </div>
+  </section>
 
-<!-- Hero Section -->
-<section id="home" class="hero-section">
-  <div class="container text-center">
-    <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-    <p class="lead">Student | Aspiring Web Developer</p>
-    <a href="#about" class="btn btn-primary">Learn More</a>
-  </div>
-</section>
+  <section id="about" class="section">
+    <h2>About Me</h2>
 
-<!-- About Section -->
-<section id="about" class="section">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-    <div class="row align-items-center">
-      <div class="col-md-4 text-center">
-        <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+    <div class="timeline">
+      <div class="timeline-item">
+        <span>2023</span>
+        <p>Started learning HTML & CSS</p>
       </div>
-      <div class="col-md-8">
-        <p>
-          I am a student passionate about web development and technology.
-          I enjoy learning HTML, CSS, JavaScript, and building responsive websites.
-        </p>
+      <div class="timeline-item">
+        <span>2024</span>
+        <p>Built responsive websites and school projects</p>
+      </div>
+      <div class="timeline-item">
+        <span>2025</span>
+        <p>Focused on JavaScript and UI design</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Skills Section -->
-<section id="skills" class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">Skills</h2>
-    <div class="row text-center">
-      <div class="col-md-3 col-6 skill-box">HTML</div>
-      <div class="col-md-3 col-6 skill-box">CSS</div>
-      <div class="col-md-3 col-6 skill-box">JavaScript</div>
-      <div class="col-md-3 col-6 skill-box">Bootstrap</div>
+  <section id="skills" class="section dark">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Bootstrap 5</div>
+      <div class="skill-card">Responsive Design</div>
+      <div class="skill-card">Git & GitHub</div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Projects Section -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2 class="section-title">Projects</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Project One</h5>
-            <p class="card-text">A simple website using HTML and CSS.</p>
-          </div>
-        </div>
+  <section id="projects" class="section">
+    <h2>Selected Work</h2>
+
+    <div class="project-list">
+      <div class="project">
+        <h4>Personal Profile Website</h4>
+        <p>Single-page responsive portfolio using HTML, CSS, and JS.</p>
       </div>
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Project Two</h5>
-            <p class="card-text">JavaScript DOM manipulation project.</p>
-          </div>
-        </div>
+
+      <div class="project">
+        <h4>JavaScript DOM Project</h4>
+        <p>Interactive form and dynamic UI behavior.</p>
       </div>
-      <div class="col-md-4">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Project Three</h5>
-            <p class="card-text">Responsive Bootstrap website.</p>
-          </div>
-        </div>
+
+      <div class="project">
+        <h4>Bootstrap Layout Demo</h4>
+        <p>Grid-based layout optimized for all screen sizes.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">Contact Me</h2>
-    <form id="contactForm">
-      <div class="mb-3">
-        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
-      </div>
-      <div class="mb-3">
-        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
-      </div>
-      <div class="mb-3">
-        <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send</button>
+  <section id="contact" class="section dark">
+    <h2>Contact</h2>
+
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
       <p id="formStatus"></p>
     </form>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <p>&copy; 2026 Your Name | <a href="resources.html">Resources</a></p>
-</footer>
+  <footer>
+    <p>© 2026 Your Name</p>
+  </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</main>
 
-<!-- Custom JS -->
 <script src="js/script.js"></script>
-
 </body>
 </html>
