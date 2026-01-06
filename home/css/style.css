@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #1f2933;
+}
+
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(to right, #1f2933, #3b82f6);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.highlight {
+  color: #facc15;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.skill-box {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #1f2933;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer a {
+  color: #facc15;
+  text-decoration: none;
+}
